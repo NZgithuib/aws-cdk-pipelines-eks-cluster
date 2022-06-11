@@ -21,7 +21,7 @@ export class EksPipelineStack extends cdk.Stack {
           "main",
           {
             authentication:
-              cdk.SecretValue.secretsManager("github-oauth-token"),
+              cdk.SecretValue.secretsManager("github-oauth-token2"),
           }
         ),
         commands: ["npm ci", "npm run build", "npx cdk synth"],
