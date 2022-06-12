@@ -29,7 +29,7 @@ export class EksClusterStack extends cdk.Stack {
       version: props.clusterVersion,
       defaultCapacity: 0,
      // defaultCapacityInstance: ec2.InstanceType.of(ec2.InstanceClass.T2, ec2.InstanceSize.MICRO),
-      vpc,
+      vpc: vpc,
       vpcSubnets: [{ subnetType: ec2.SubnetType.PRIVATE }],
     });
 
